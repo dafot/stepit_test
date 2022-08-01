@@ -1,0 +1,13 @@
+
+html,
+body {
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-default);
+    line-height: var(--line-height-default);
+    letter-spacing: var(--letter-spacing-default);
+}
+._container {
+    max-width: var(--width-container);
+    padding: 0 var(--padding-container);
+    margin:0 auto; 
+}

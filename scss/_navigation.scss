@@ -1,0 +1,51 @@
+
+
+
+.navigation {
+    padding-top: 105px;
+    font-size: 18px;
+    a:visited {
+        color: #000;
+    }
+}
+
+.navigation__body {
+    display: flex;
+    justify-content: space-between
+}
+.navigation-sec {
+}
+.navigation__list {
+    @include flex;
+    height: 100px;
+}
+.navigation__itme {
+    margin-right: 48px;
+}
+.navigation__link {
+    transition: all .2s;
+
+}
+.navigation__link:hover,
+.navigation__link:visited:hover {
+    color: var(--color-accent);
+}
+.navigation__right {
+}
+.cart-constraction {
+    @include flex;
+    align-items: center;
+    height: 100px;
+}
+
+.navigation__favourites {
+}
+.favourites {
+    margin-right: 31px;
+}
+.navigation__cart {
+}
+.cart {
+}
+.cart__num {
+}

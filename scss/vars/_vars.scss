@@ -1,0 +1,25 @@
+:root {
+    /*====COLORS====*/   
+    --color-main-txt:#000;
+    --color-light-txt: rgba(54, 54, 54, 0.25);
+    --color-phone-txt: #606060;
+    --color-white-txt: #fff;
+    --color-accent:#FEB302;
+    --color-light-accent: rgba(254, 179, 2, 0.45);
+    --color-btn: #FEB302;
+    --color-price: #DA5C5C;
+    --h1-color: #232323;//(main)
+    --h2-color: #343030;//(sections)
+    --h3-color: #000000;//(articles)
+    //--h4-color:;//(items)
+    --p-color : #252525;//(text)
+    /*====CONTAINER====*/
+    --width-container: 1750px;
+    --padding-container: 15px;
+    /*=====EM, REM, FONTS=====*/
+    --font-family-default: 'Roboto-Regular', sans-serif;//(body)
+    --font-size-default: 23px;//(html,rem)
+    --line-height-default: 180%;//(body)
+    --letter-spacing-default: 1px;//(body)
+    }
+    

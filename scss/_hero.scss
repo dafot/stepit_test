@@ -1,0 +1,36 @@
+
+.hero {    
+    padding: 245px 0px 54px 0;
+    background-color: rgba(83, 141, 255, 0.05);
+}
+.hero__body {
+    @include flex;
+    align-items: flex-start;
+    gap:88px;
+}
+.hero__left-content {
+    padding-top:49px;
+    padding-left: 46px;
+}
+.hero__title {
+    letter-spacing: 3%;
+}
+
+.hero__descr {   
+    color: #605F5F;
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 23.7px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    max-width: 698px;
+    margin-bottom: 83px;
+}
+.hero__search {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.hero__right-content {
+}
+.hero__img {
+    max-width: 100%;
+}

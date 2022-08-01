@@ -1,0 +1,110 @@
+.range {
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 178px;
+    a:visited {
+        color: #000;
+    }
+}
+.range__title {
+    text-align: center;
+    margin-bottom: 75px;
+
+}
+
+.range__menu {
+   
+    margin-bottom: 142px;
+    
+}
+.range__menu-list {
+    max-width: 1294px;
+    margin: 0 auto;
+    @include flex;
+    font-size: 18px;
+}
+.range__menu-item {
+}
+.range__menu-link {
+    display: block;
+    padding: 14px;    
+    border-radius: 23px;
+    transition: all .2s ease;
+    &:visited:hover {
+        color:#fff;
+    }
+    &:hover {
+        background-color: var(--color-accent);
+    }
+
+    }
+
+.range__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 68px 26px;
+
+}
+.range__card {
+    max-width: 409px;
+    background-color: #F6F9FF;   
+    padding: 14.75px 15px;
+    border-radius: 27px;
+    font-size: 16px;   
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+  ;
+}
+.card {
+    padding: 14px 15px 29px 15px;
+}
+.card__info {   
+}
+.card__img {
+    max-width: 100%;
+}
+.card__title {
+}
+.title-item {
+}
+.card__descr {
+    line-height: 123%;
+    margin-bottom: 17.82px;
+}
+.card__prices {
+    margin-bottom: 31px;
+}
+.card__price {
+    color: #DA5C5C;
+}
+.card__old-price {
+    color:rgba(0, 0, 0, 0.25);
+    text-decoration-line: line-through;
+    
+}
+.card__btns {
+    @include flex;
+    align-items: center;
+    
+}
+.card__btn-arrow {
+    display: flex;
+    align-items: center;
+}
+.card__btn-loop {
+    @extend .card__btn-arrow;
+}
+.card__favourite-img {
+}
+.card__in-cart-btn {
+    padding: 15px 38px;
+    background-color: var(--color-light-accent);
+    border-radius: 13.37px;
+    max-width: 184px;
+    color: #fff;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    &:hover {
+        background-color: var(--color-accent);
+    }
+}

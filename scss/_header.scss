@@ -1,0 +1,133 @@
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @media (max-width: 1500px) {
+        font-size: 12px;
+    }
+}
+
+.header__body {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    @include flex;
+    padding: 77px 0px;
+}
+.header__left {
+    @include flex;
+    min-width: 853px;
+    @media (max-width: 1500px) {
+        min-width: 500px;
+        
+    }
+}
+.header__logo {
+    @media (max-width: 1500px) {
+        margin-right:  100px;
+    }
+}
+.logo {
+}
+.logo__img {
+}
+.header__menu {
+    @media (max-width: 1400px) {
+        display: none;
+    }
+}
+.menu {
+ 
+}
+.menu__list {
+    @include flex(center);    
+    max-width: 668px;
+}
+.menu__item {
+}
+.menu__link {
+    margin-right: 48px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 18px;
+    color: var(--color-light-txt);
+    transition: color .2s ease;
+    &:hover,
+    &.active:hover {
+        color: var(--color-accent);
+    }
+    @media (max-width: 1500px) { 
+            font-size: 16px;       
+    }
+
+}
+
+.menu__link.active {
+    color: #000;
+}
+.header__right {
+    @include flex;
+    min-width: 508px;
+    @media (max-width: 1500px) {
+        font-size: 16px;
+    }
+}
+.header__phone {
+    position: relative;
+    color: var(--color-phone-txt);
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -30px;      
+
+        @include background;
+        background-image: url(../img/header/phone-icon.svg);
+        width: 20px;
+        height: 20px;
+    }
+    &:visited {
+        color: var(--color-phone-txt);
+    }
+}
+.header__favourites {
+    color: var(--color-phone-txt);
+    cursor: pointer;
+    @media (max-width: 1400px) {
+        display: none;
+    }
+}
+.header__cart {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.cart {
+    font-size: 18px;
+    @include flex;
+    color:var(--color-white-txt);
+    min-width: 149px;
+    max-height: 53px;
+    background-color: var(--color-light-accent);
+    border-radius: 14px;
+    padding: 15px 7px 15px 17px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    &:hover {
+        background-color: var(--color-accent);
+    }
+    @media (max-width: 1500px) {
+        font-size: 16px;
+    }
+}
+.cart__num {
+    @include flex(center);
+    
+    color: #444444;
+    padding: 9px 13px;
+    background-color: #fff;
+    border-radius: 14px;
+    min-width: 39px;
+    max-height: 39px;
+}
